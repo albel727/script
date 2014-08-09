@@ -1,4 +1,4 @@
-require 'autoscript'
+require 'script/autoscript'
 
 module M
   autoscript :SimpleScript, "scripts/simple-script.rb"

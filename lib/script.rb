@@ -4,7 +4,7 @@
 # use of script files to define objects that can be loaded into a program in
 # much the same way that objects can be loaded from YAML or Marshal files.
 #
-# See intro.txt[link:files/intro_txt.html] for an overview.
+# See README[link:README_rdoc.html] for an overview.
 
 class Script < Module
   # The file with which the Script was instantiated.

@@ -2,7 +2,7 @@ require 'script'
 
 class Module
   alias const_missing_before_autoscript const_missing
-  
+
   def const_missing(sym) # :nodoc:
     filename = @autoscript && @autoscript[sym]
     if filename
@@ -20,7 +20,7 @@ class Module
   # Use like Module#autoload--however, the underlying opertation is #load rather
   # than #require, because scripts, unlike libraries, can be loaded more than
   # once. See examples/autoscript-example.rb
-  
+
   def autoscript mod, filename
     (@autoscript ||= {})[mod] = filename
   end
